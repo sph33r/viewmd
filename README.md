@@ -2,6 +2,19 @@
 
 Local markdown viewer. Python standard library only, no install step.
 
+## AI Disclosure
+
+Claude was used to create this.
+
+## Reasoning
+
+I work in a locked down enterprise environment and I'm not allowed to install things.
+Python however? I can do that. So I created this to let me view markdown files from the
+CLI. It'll pop open my web browser, I can view the doc, close the browser with a keyboard
+command and then jump back to terminal, never taking my fingers off the keyboard.
+
+## What It Is
+
 A small HTTP server on `127.0.0.1` serves markdown files and opens the default
 browser. Rendering runs in the browser using libraries vendored in this repo,
 so it works without internet access.
@@ -53,12 +66,12 @@ vendor/     third-party browser libraries
 
 ## Vendored libraries
 
-| File | Package | Version | License |
-|------|---------|---------|---------|
-| `vendor/marked.umd.js` | marked | 18.1.1 | MIT |
-| `vendor/mermaid.min.js` | mermaid | 12.2.0 | MIT |
-| `vendor/highlight.min.js`, `vendor/hljs-*.css` | highlight.js | 11.11.1 | BSD-3-Clause |
-| `vendor/github-markdown.css` | github-markdown-css | 5.9.0 | MIT |
+| File                                           | Package             | Version | License      |
+| ---------------------------------------------- | ------------------- | ------- | ------------ |
+| `vendor/marked.umd.js`                         | marked              | 18.1.1  | MIT          |
+| `vendor/mermaid.min.js`                        | mermaid             | 12.2.0  | MIT          |
+| `vendor/highlight.min.js`, `vendor/hljs-*.css` | highlight.js        | 11.11.1 | BSD-3-Clause |
+| `vendor/github-markdown.css`                   | github-markdown-css | 5.9.0   | MIT          |
 
 To update a library, replace the file, then regenerate the checksums and
 update the table above:
