@@ -14,7 +14,7 @@ files from the CLI. It'll pop open my web browser, I can view the doc, close the
 browser window, and jump back to terminal quickly.
 
 It handles syntax highlighting and Mermaid diagrams. Just the bare minimum to meet
-my requirements from day to day.
+my requirements for day to day usage.
 
 I tried to keep security in mind so the external libraries packaged with the script
 are pinned and checksum-verified on start. You also can't display external images
