@@ -1,17 +1,24 @@
 # viewmd
 
-Local markdown viewer. Python standard library only, no install step.
+Local markdown viewer. Python standard library only, no additional installs required.
 
 ## AI Disclosure
 
 Claude was used to create this.
 
-## Reasoning
+## Why Make This?
 
 I work in a locked down enterprise environment and I'm not allowed to install things.
-Python however? I can do that. So I created this to let me view markdown files from the
-CLI. It'll pop open my web browser, I can view the doc, close the browser with a keyboard
-command and then jump back to terminal, never taking my fingers off the keyboard.
+I am, however, allowed to use Python. So I created this to let me view markdown
+files from the CLI. It'll pop open my web browser, I can view the doc, close the
+browser window, and jump back to terminal quickly.
+
+It handles syntax highlighting and Mermaid diagrams. Just the bare minimum to meet
+my requirements from day to day.
+
+I tried to keep security in mind so the external libraries packaged with the script
+are pinned and checksum-verified on start. You also can't display external images
+and the viewer won't run any embedded scripts found in the markdown files.
 
 ## What It Is
 
